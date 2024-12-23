@@ -49,10 +49,15 @@ label {
     font-size: 16px;
     border-radius: 5px;
     border-width: 1px;
+    cursor: pointer;
 }
 
 #firstName:hover, #lastName:hover, #email:hover, #message:hover {
     border: 2px solid hsl(169, 82%, 27%);
+}
+
+#firstName:active, #lastName:active, #email:active, #message:active {
+    background-color: hsl(148, 38%, 91%);
 }
 
 
@@ -71,6 +76,7 @@ label {
     font-size: 16px;
     border-radius: 5px;
     border-width: 1px;
+    cursor: pointer;
 }
 
 .QT {
@@ -87,6 +93,7 @@ label {
     border-radius: 5px;
     padding-left: 10px;
     padding-bottom: 5px;
+    cursor: pointer;
 }
 
 #general-check:active, #support-check:active {
@@ -102,6 +109,7 @@ label {
 #general {
     accent-color: hsl(169, 82%, 27%);
     margin-right: 5px;
+    cursor: pointer;
 }
 
 #support-check {
@@ -113,6 +121,7 @@ label {
 #support {
     accent-color: hsl(169, 82%, 27%);
     margin-right: 5px;
+    cursor: pointer;
 }
 
 #message {
@@ -121,6 +130,7 @@ label {
     margin-top: 10px;
     border-radius: 5px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .checkBox {
@@ -129,10 +139,12 @@ label {
 
 .checkBox p {
     margin-left: 10px;
+    cursor: pointer;
 }
 
 #checkBox {
     accent-color: hsl(169, 82%, 27%);
+    cursor: pointer;
 }
 
 button {
@@ -148,6 +160,21 @@ button {
 
 label span, p span {
     color: hsl(169, 82%, 27%);
+}
+
+
+.attribution {
+    font-size: 15px;
+    margin-top: 20PX;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.attribution a:hover {
+    font-size: 20px;
 }
 
 .popup.hidden {
