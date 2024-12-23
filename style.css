@@ -1,0 +1,272 @@
+body {
+    background-color: hsl(151, 45%, 90%);
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 100px;
+}
+
+
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    width: 500px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.error {
+    border: 2px solid red !important;
+}
+
+label {
+    font-size: 16px;
+}
+
+.firstLast {
+    display: flex;
+}
+
+#firstName, #lastName  {
+    height: 30px;
+    width: 220px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+#firstName:hover, #lastName:hover, #email:hover, #message:hover {
+    border: 2px solid hsl(169, 82%, 27%);
+}
+
+
+.firstName {
+    padding-right: 10px;
+}
+
+.lastName {
+    padding-left: 10px;
+}
+
+#email {
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.QT {
+    display: flex;
+}
+
+#general-check, #support-check {
+    display: flex;
+    border-style: groove;
+    border-width: 1px;
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+#general-check:active, #support-check:active {
+    background-color: hsl(148, 38%, 91%);
+}
+
+#general-check {
+    margin-right: 10px;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+
+#general {
+    accent-color: hsl(169, 82%, 27%);
+    margin-right: 5px;
+}
+
+#support-check {
+    margin-left: 10px;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+
+#support {
+    accent-color: hsl(169, 82%, 27%);
+    margin-right: 5px;
+}
+
+#message {
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.checkBox {
+    display: flex;
+}
+
+.checkBox p {
+    margin-left: 10px;
+}
+
+#checkBox {
+    accent-color: hsl(169, 82%, 27%);
+}
+
+button {
+    background-color: hsl(169, 82%, 27%);
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+label span, p span {
+    color: hsl(169, 82%, 27%);
+}
+
+.popup.hidden {
+    display: none;
+}
+
+
+/* Popup Background */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Popup Content */
+.popup-content {
+    background-color: hsl(169, 82%, 27%);
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    margin-top: -600px;
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Hide Popup */
+.hidden {
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 10px;
+        padding-top: 40px;
+    }
+    /* .container {
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        padding-right: 90px;
+    } */
+    
+    form {
+        display: flex;
+        /* marg
+        in-right: 60px; */
+        /* flex-wrap: wrap; */
+        width: 90%;
+        justify-content: center;
+    }
+
+
+    .firstLast {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    #firstName, #lastName {
+        width: 100%;
+        margin: 10px 0;
+        height: 37px;
+    }
+
+    #email {
+        height: 37px;
+    }
+
+    .firstName {
+        padding: 0;
+        margin: 10px 0 10px 0;
+    }
+
+    .lastName {
+        padding: 0;
+        margin: 10px 0 10px 0;
+    }
+
+    .QT {
+        flex-direction: column;
+    }
+
+    #general-check, #support-check {
+        width: 100%;
+        height: 37px;
+        padding: 10px 0 20px 30px;
+        margin: 10px 0;
+    }
+
+    #message {
+        height: 200px;
+    }
+
+    
+}
